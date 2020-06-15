@@ -1,0 +1,7 @@
+.flex-main{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+
+  padding: 2.5vmax;
+}

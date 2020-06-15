@@ -1,0 +1,12 @@
+header{
+  background-color: black;
+}
+
+p{
+  margin: 0;
+  padding: 5.5vh 0;
+
+  color: white;
+  text-align: center;
+  font-size: 7.5vmin;
+}
