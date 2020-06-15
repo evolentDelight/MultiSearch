@@ -1,4 +1,20 @@
-.item-flex{
+.store-items-flex{
   display: flex;
   flex-wrap: nowrap;
+
+  border-style: solid;
+  border-color: black;
+  
+  padding: 1vh 0;
+
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.store-tab{
+  margin: 0px 0px 3.5vh 0px;
+}
+
+h1{
+  margin: 0px 0px 1vh 0px;
 }

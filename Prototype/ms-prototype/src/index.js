@@ -4,9 +4,9 @@ import "./index.css";
 import Main from "./Main";
 
 const storeList = [
-  { name: "Walmart", link: "" },
-  { name: "Amazon", link: "" },
-  { name: "Target", link: "" }
+  { name: "Store1", link: "" },
+  { name: "Store2", link: "" },
+  { name: "Store3", link: "" }
 ];
 
 ReactDOM.render(

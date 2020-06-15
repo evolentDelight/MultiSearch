@@ -1,3 +1,6 @@
 .item-box{
   margin: 0px 0.5vw;
+
+  border-style: solid;
+  padding: 15vmin 7.5vmin 2.5vmin 7.5vmin;
 }

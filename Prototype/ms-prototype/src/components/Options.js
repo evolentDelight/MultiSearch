@@ -5,7 +5,7 @@ import './Options.css';
 function Options(props){
 
   const element = props.storeList.map((store)=>
-    <li key={`store-${nanoid()}`}>{store.name}</li>
+    <li key={`store-${nanoid()}`}>{store}</li>
   );
 
   return(
