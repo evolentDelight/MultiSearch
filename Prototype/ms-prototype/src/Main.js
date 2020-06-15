@@ -13,10 +13,12 @@ function Main(props) {
     searchValue = value;
   }
 
+  const names = props.storeList.map((store) => store.name)
+
   const userSelections = (
     <div key={`Main-uS-${nanoid()}`} className="flex-main userselection">
       <Search key={`uS-${nanoid()}`} executeSearch={executeSearch} />
-      <Options key={`uS-${nanoid()}`} storeList={props.storeList} />
+      <Options key={`uS-${nanoid()}`} storeList={names} />
     </div>
   );
 
