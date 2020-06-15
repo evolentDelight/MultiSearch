@@ -1,0 +1,13 @@
+.hide{
+  display: none;
+}
+
+.flex-form{
+  display: flex;
+  align-items: center;
+}
+
+input{
+  font-size: 5vmin;
+  position: sticky;
+}
