@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import './Search.css';
+import React, { useState, useEffect } from "react";
+import "./Search.css";
 
 function Search(props) {
-  const [name, setName] = useState("");
+  const [name, setName] = useState(localStorage.getItem("searchValue") || "");
+  let IsSet = false;
 
   function handleSubmit(e) {
     e.preventDefault();
     props.setSearchValue(name);
+    localStorage.setItem("searchValue", name);
   }
 
   function handleChange(e) {
@@ -15,7 +17,9 @@ function Search(props) {
 
   return (
     <form onSubmit={handleSubmit} className="flex-form">
-      <label htmlFor="input" className="hide">Search for Products</label>
+      <label htmlFor="input" className="hide">
+        Enter Product Name
+      </label>
       <input
         type="text"
         className="input"

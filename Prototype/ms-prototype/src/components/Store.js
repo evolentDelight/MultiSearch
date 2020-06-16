@@ -7,7 +7,7 @@ function Store(props) {
   //item name{props.product}
   //Store name{props.name}
   //Store link{props.link}
-
+  //console.log("searchValue: ", props.product)
 
   const initial = [
     <Item key={`item-${nanoid()}`} state="initial" />,
