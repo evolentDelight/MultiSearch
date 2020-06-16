@@ -6,8 +6,10 @@ import Display from "./components/Display";
 import { nanoid } from "nanoid";
 import "./Main.css";
 
+
 function Main(props) {
   const [searchValue, setSearchValue] = useState("");
+  const [searchBartoggle, setsearchBartoggle] = useState(false);
 
   const names = props.storeList.map((store) => store.name);
 
@@ -20,11 +22,22 @@ function Main(props) {
 
   const hoverSearchbar = (
     <div className="searchBar-hover">
-      <div className="searchBar-flex-container">
+      <div className={`searchBar-flex-container ${searchBartoggle ? `reveal` : `hide`}`}>
         <Search key={`uS-${nanoid()}`} setSearchValue={setSearchValue} />
       </div>
     </div>
   );
+
+  window.addEventListener("scroll", () => {
+    const element = document.getElementsByClassName("display-flex")[0].getBoundingClientRect();
+    console.log("Called?1")
+    console.log("Main -> element.top", element.top)
+    if(element.top <= 0){
+      setsearchBartoggle(true);
+      console.log("Called?2")
+    }
+    else setsearchBartoggle(false);
+  })
 
   return [
     <Header key={`header-${nanoid()}`} />,
