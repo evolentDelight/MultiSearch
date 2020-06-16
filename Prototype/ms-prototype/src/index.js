@@ -6,7 +6,8 @@ import Main from "./Main";
 const storeList = [
   { name: "Store1", link: "" },
   { name: "Store2", link: "" },
-  { name: "Store3", link: "" }
+  { name: "Store3", link: "" },
+  { name: "Store4", link: "" }
 ];
 
 ReactDOM.render(

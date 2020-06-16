@@ -8,6 +8,7 @@ function Store(props) {
   //Store name{props.name}
   //Store link{props.link}
 
+
   const initial = [
     <Item key={`item-${nanoid()}`} state="initial" />,
     <Item key={`item-${nanoid()}`} state="initial" />,

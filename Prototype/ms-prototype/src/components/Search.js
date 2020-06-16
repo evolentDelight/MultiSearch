@@ -6,7 +6,7 @@ function Search(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    props.executeSearch(e.target.value);
+    props.setSearchValue(name);
   }
 
   function handleChange(e) {

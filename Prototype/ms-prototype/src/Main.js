@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "./components/Header.js";
 import Search from "./components/Search.js";
 import Options from "./components/Options";
@@ -7,17 +7,13 @@ import { nanoid } from "nanoid";
 import "./Main.css";
 
 function Main(props) {
-  let searchValue = "";
-
-  function executeSearch(value) {
-    searchValue = value;
-  }
+  const [searchValue, setSearchValue] = useState("")
 
   const names = props.storeList.map((store) => store.name)
 
   const userSelections = (
     <div key={`Main-uS-${nanoid()}`} className="flex-main userselection">
-      <Search key={`uS-${nanoid()}`} executeSearch={executeSearch} />
+      <Search key={`uS-${nanoid()}`} setSearchValue={setSearchValue} />
       <Options key={`uS-${nanoid()}`} storeList={names} />
     </div>
   );
