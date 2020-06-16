@@ -18,6 +18,12 @@ function Main(props) {
     </div>
   );
 
+  const hoverSearchbar = (
+    <div>
+
+    </div>
+  )
+
   return [
     <Header key={`header-${nanoid()}`} />,
     userSelections,
