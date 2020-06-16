@@ -30,11 +30,8 @@ function Main(props) {
 
   window.addEventListener("scroll", () => {
     const element = document.getElementsByClassName("display-flex")[0].getBoundingClientRect();
-    console.log("Called?1")
-    console.log("Main -> element.top", element.top)
     if(element.top <= 0){
       setsearchBartoggle(true);
-      console.log("Called?2")
     }
     else setsearchBartoggle(false);
   })
