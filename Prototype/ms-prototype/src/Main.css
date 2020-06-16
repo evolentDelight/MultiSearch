@@ -13,6 +13,10 @@
   right: 0;
 }
 
+.reveal{
+  display: block;
+}
+
 .searchBar-flex-container{
   display: flex;
   justify-content: center;
@@ -20,4 +24,8 @@
 
 .searchBar-flex-container input{
   text-align: center;
+}
+
+.hide{
+  display: none;
 }
