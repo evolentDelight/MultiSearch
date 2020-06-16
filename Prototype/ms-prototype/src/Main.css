@@ -5,3 +5,19 @@
 
   padding: 2.5vmax;
 }
+
+.searchBar-hover{
+  position: fixed;
+  top: 25px;
+  left: 0;
+  right: 0;
+}
+
+.searchBar-flex-container{
+  display: flex;
+  justify-content: center;
+}
+
+.searchBar-flex-container input{
+  text-align: center;
+}
