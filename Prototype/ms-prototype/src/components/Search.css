@@ -7,6 +7,18 @@
   align-items: center;
 }
 
-input{
+.input{
   font-size: 5vmin;
+}
+
+input::placeholder{
+  text-align: right;
+}
+
+input:-ms-input-placeholder{
+  text-align: right;
+}
+
+input::-ms-input-placeholder{
+  text-align: right;
 }

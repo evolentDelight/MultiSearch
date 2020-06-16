@@ -3,7 +3,6 @@ import "./Search.css";
 
 function Search(props) {
   const [name, setName] = useState(localStorage.getItem("searchValue") || "");
-  let IsSet = false;
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -13,6 +12,7 @@ function Search(props) {
 
   function handleChange(e) {
     setName(e.target.value);
+    localStorage.setItem("searchValue", e.target.value);
   }
 
   return (
@@ -26,7 +26,7 @@ function Search(props) {
         id="input"
         value={name}
         onChange={handleChange}
-        placeholder="Search"
+        placeholder="🔍"
         required="required"
       />
     </form>
