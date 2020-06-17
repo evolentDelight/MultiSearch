@@ -34,18 +34,18 @@ function Store(props) {
   useEffect(() => {
     //Call server which will handle sending products, its thumbnail(s), its name, and  its link to the actual website
     if (props.product !== "") {
-      fetch("")
-        .then((response) => response.json())
-        .then(
-          (result) => {
-            setIsLoaded(true);
-            setJson(result);
-          },
-          (error) => {
-            setIsLoaded(true);
-            setError(error);
-          }
-        );
+      // fetch("")
+      //   .then((response) => response.json())
+      //   .then(
+      //     (result) => {
+      //       setIsLoaded(true);
+      //       setJson(result);
+      //     },
+      //     (error) => {
+      //       setIsLoaded(true);
+      //       setError(error);
+      //     }
+      //   );
     }
   }, []);
 
