@@ -32,7 +32,7 @@ function Store(props) {
   const [json, setJson] = useState({});
 
   useEffect(() => {
-    //Call server which will handle sending thumbnail(s), name, and link to the actual website
+    //Call server which will handle sending products, its thumbnail(s), its name, and  its link to the actual website
     if (props.product !== "") {
       fetch("")
         .then((response) => response.json())
