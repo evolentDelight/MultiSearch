@@ -6,10 +6,10 @@ import Main from "./Main";
 window.localStorage.clear();
 
 const storeList = [
-  { name: "Store1", link: "" },
+  { name: "Store1", link: "" }, //Link is an API call to server. The server will respond with data associated with product
   { name: "Store2", link: "" },
   { name: "Store3", link: "" },
-  { name: "Store4", link: "" }
+  { name: "Store4", link: "" },
 ];
 
 ReactDOM.render(
