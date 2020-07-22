@@ -1,5 +1,5 @@
 import React from "react";
-import "./Item.css";
+import "../style/Item.css";
 
 function Item(props) {
   //passes link{props.link}

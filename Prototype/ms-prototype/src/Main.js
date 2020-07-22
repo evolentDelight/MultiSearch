@@ -4,7 +4,7 @@ import Search from "./components/Search.js";
 import Options from "./components/Options";
 import Display from "./components/Display";
 import { nanoid } from "nanoid";
-import "./Main.css";
+import "./style/Main.css";
 
 
 function Main(props) {

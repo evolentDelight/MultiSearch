@@ -1,6 +1,6 @@
 import React from 'react';
 import {nanoid} from "nanoid"
-import './Options.css';
+import '../style/Options.css';
 
 function Options(props){
 

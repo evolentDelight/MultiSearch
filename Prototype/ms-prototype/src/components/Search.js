@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Search.css";
+import "../style/Search.css";
 
 function Search(props) {
   const [name, setName] = useState(localStorage.getItem("searchValue") || "");

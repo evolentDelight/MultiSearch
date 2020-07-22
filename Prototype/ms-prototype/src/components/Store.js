@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import Item from "./Item.js";
-import "./Store.css";
+import "../style/Store.css";
 
 function Store(props) {
   //item name{props.product}

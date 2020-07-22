@@ -1,7 +1,7 @@
 import React from "react";
 import {nanoid} from "nanoid";
 import Store from "./Store.js"
-import "./Display.css";
+import "../style/Display.css";
 
 function Display(props){
 
