@@ -1,0 +1,31 @@
+Expand/Collapse per store
+  (Default): Expand
+  (Loading): Expand
+  (Empty): Collapse
+  *Hover over - light up
+  
+Order Store by relevance to the item
+  Database/data to detect item
+  Empty stores are moved to the bottom and collapsed
+  -Edit the search hover popup to correct logic when the stores are rearranged
+
+NextJS Implementation
+  Home: Static Generation with no Data
+  Search: Static Generation with Data & SWR
+    SGwD: Database for sorting the store by relevance
+    SWR: Remote Fetching from server API
+        SEO not needed
+
+Database:
+  By store, get user choice: Furniture, Tech, Apparels, etc.
+    each store has a priority level of many departments; the level represents the stocks/types/availability & what the store is known for
+      Ex: Lowe - Furniture, BestBuy - Tech, Target - Clothes with other departments, Walmart - Clothing & other departments
+  Future: Automatically link item characteristics to item
+
+Update Title & Description appropriate to the brand
+ 
+---Performance Queries---
+Store API fetch:
+  Will the fetch be simultaneous or will it run one at a time per store
+  
+1
