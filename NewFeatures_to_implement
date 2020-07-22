@@ -6,7 +6,7 @@ Expand/Collapse per store
   
 Order Store by relevance to the item
   Database/data to detect item
-  Empty stores are moved to the bottom and collapsed
+  Stores that show no items are moved to the bottom and collapsed
   -Edit the search hover popup to correct logic when the stores are rearranged
 
 NextJS Implementation
